@@ -1,0 +1,13 @@
+.main {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: #CCFFFF;
+
+    .nav-item {
+        margin: 0 16px;
+        cursor: pointer;
+    }
+}
