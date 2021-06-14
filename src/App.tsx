@@ -8,13 +8,14 @@ import store from 'src/store';
 import Layouts from 'Modules/Layouts';
 import RouterTest from 'Modules/RouterTest';
 import Formik from 'Modules/Formik';
+import Animation from 'Modules/Animation';
 
 const App:FC = () => {
     
     return (
         <Provider store={store}>
             <div style={{display: 'flex', justifyContent: 'center'}}>
-                <Layouts />
+                <Animation />
             </div>
         </Provider>
     );

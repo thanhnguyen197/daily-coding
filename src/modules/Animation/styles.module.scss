@@ -1,0 +1,45 @@
+.animation {
+    width: 1000px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+
+
+    .cloud {
+        position: absolute;
+        left: -200px;
+        top: 0;
+        width: 200px;
+        animation-name: drive;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    .circle {
+        width: 100px;
+        padding: 50px 0;
+        background-color:burlywood;
+        border-radius: 50%;
+        line-height: 0;
+        text-align: center;
+        transition: background-color 2s, transform .3s;
+    }
+    
+    .circle:hover {
+        background-color: salmon;
+        transform: translateY(10px);
+    }
+}
+
+
+@keyframes drive {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(1200px);
+    }
+}
+
+
